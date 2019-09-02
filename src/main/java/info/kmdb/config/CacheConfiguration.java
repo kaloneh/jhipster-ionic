@@ -43,6 +43,11 @@ public class CacheConfiguration {
             createCache(cm, info.kmdb.domain.User.class.getName());
             createCache(cm, info.kmdb.domain.Authority.class.getName());
             createCache(cm, info.kmdb.domain.User.class.getName() + ".authorities");
+            createCache(cm, info.kmdb.domain.Blog.class.getName());
+            createCache(cm, info.kmdb.domain.Entry.class.getName());
+            createCache(cm, info.kmdb.domain.Entry.class.getName() + ".tags");
+            createCache(cm, info.kmdb.domain.Tag.class.getName());
+            createCache(cm, info.kmdb.domain.Tag.class.getName() + ".entries");
             // jhipster-needle-ehcache-add-entry
         };
     }
